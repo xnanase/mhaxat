@@ -1,0 +1,1001 @@
+<!-----------------------------------------------------------------------
+Character Page [01]: Fortitude
+Made by glenthemes
+
+❯❯ this version contains 6 base characters!
+❯❯ for 2 starter characters: https://pastebin.com/raw/wW2wRddJ
+
+Initial release: 2017/04/06
+Major update: 2021/12/12
+Last updated: 2021/12/12
+
+------------------------------------------------------
+ 
+📖 PLEASE READ THE GUIDE: 📖
+ 
+https://docs.google.com/presentation/d/14EJlSGPCq-xH6YlT1JcOFzk_SEl_z7fl9ozhdKCP31o/edit?usp=sharing
+ 
+------------------------------------------------------
+
+TERMS OF USE:
+1) Do not remove the theme credit.
+2) Do not repost/redistribute my themes.
+3) Do not take parts of the code and use it as your own.
+4) Do not use my themes as a base code.
+5) Do not mix my themes together.
+
+CREDITS:
+(✿˶´>ω<) ~ glencredits.tumblr.com/fortitude
+------------------------------------------------------------------------>
+<!DOCTYPE>
+<html>
+
+<head>
+ 
+<title>{Title}</title>
+ 
+<link rel="shortcut icon" href="{Favicon}">
+
+<!------ JQUERY ------>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!------ GOOGLE FONTS ------>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:600|Reggae+One|Public+Sans:500|Nunito:700|Karla|Montserrat:500" rel="stylesheet">
+
+<!------ PRELOAD CUSTOM FONTS ------>
+<link rel="preload" href="//glen-assets.github.io/fonts/LT Emphasis.ttf" as="font" type="font/ttf" crossorigin>
+
+<link rel="preload" href="//glen-assets.github.io/fonts/KaoriGel.ttf" as="font" type="font/ttf" crossorigin>
+
+<!------ ICON FONTS ------>
+<link rel="stylesheet" href="https://glen-assets.github.io/flaticon-uicons/uicons-regular-rounded.css">
+
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<!------ PAGE SCRIPTS ------>
+<script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<link href="//glenthemes.s3.eu-west-2.amazonaws.com/chara-pages/01/uzlnn.css" rel="stylesheet">
+
+<script src="//glenthemes.s3.eu-west-2.amazonaws.com/chara-pages/01/ysypl.js"></script>
+ 
+<!--------------------------------------------------------->
+ 
+<style type="text/css">
+
+/*----- CUSTOM FONTS -----*/
+@font-face { font-family: "LT emphasis"; src: url('//glen-assets.github.io/fonts/LT Emphasis.ttf'); }
+
+@font-face { font-family: "kaori gel"; src: url('//glen-assets.github.io/fonts/KaoriGel.ttf'); }
+ 
+/*----- TOOLTIPS -----*/
+#s-m-t-tooltip {
+    padding:5px 10px;
+    margin:20px;
+    background-color:var(--Tooltips-BG);
+    border-radius:2px;
+    font-family:public sans;
+    font-size:8px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    color:var(--Tooltips-Text);
+    line-height:1.7em;
+    z-index:99;
+    max-width:40vw;
+}
+ 
+/*----- TUMBLR CONTROLS -----*/
+iframe#tumblr_controls, .iframe-controls--desktop {
+    top:5px!important;
+    right:5px!important;
+    position:fixed!important;
+    
+    transform:scale(0.7,0.7);
+    
+    transform-origin:100% 0;
+    z-index:999999!important;
+    user-select:none;
+    opacity:0;
+}
+
+.tc-inv {
+    filter:invert(100%) hue-rotate(180deg)!important;
+    -webkit-filter:invert(100%) hue-rotate(180deg)!important;
+}
+
+.abeer {
+    opacity:1!important;
+}
+
+.tmblr-iframe--follow-teaser, .follow-teaser, .iframe-controls--phone-mobile, .tmblr-iframe--app-cta-button {
+    display:none!important;
+}
+ 
+/*----- BASICS -----*/
+body {
+    background-image:url();
+    background-attachment:fixed;
+    background-repeat:repeat;
+    font-family:karla;
+    font-size:var(--Main-Font-Size);
+    color:var(--Main-Text-Color);
+    line-height:var(--Main-Text-Line-Height);
+    text-align:left;
+}
+
+.popup-box a:not([class]){
+    color:var(--Links-Color);
+    padding-bottom:.5px;
+    border-bottom:1px solid var(--Links-Underline);
+    text-decoration:none;
+}
+
+a {
+    text-decoration:none;
+}
+
+b, strong {
+    color:var(--Bold);
+}
+
+i:not([class]), em {
+    color:var(--Italic);
+}
+
+.note-to-user {
+    /* change VISIBLE to HIDDEN to dismiss the "get started" message */
+    visibility:visible;
+}
+
+/*----- TEXT HIGHLIGHT -----*/
+::selection {
+    color:var(--Text-On-Highlight);
+    background:var(--Text-BG-On-Highlight);
+}
+ 
+::-moz-selection {
+    color:var(--Text-On-Highlight);
+    background:var(--Text-BG-On-Highlight);
+}
+
+/*----- SCROLLBAR -----*/
+::-webkit-scrollbar {
+    width:var(--Scrollbar-Width);
+    height:0;
+    background-color:var(--Popup-Background);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color:var(--Scrollbar-Color);
+    border-radius:var(--Scrollbar-Width);
+}
+ 
+::-webkit-scrollbar-track {
+    background-color:var(--Popup-Background);
+    border-radius:var(--Scrollbar-Width);
+}
+
+::-webkit-scrollbar-corner {
+    background:var(--Popup-Background);
+}
+
+/*----- MAIN SETTINGS -----*/
+body {
+    background-color:#eeecec;
+}
+
+:root {
+    /*----- GENERAL -----*/
+    --Main-Font-Size:12px;
+    --Main-Text-Color:#999;
+    --Main-Text-Line-Height:1.6em;
+    
+    --Links-Color:#f38989;
+    --Links-Underline:#fbdbdb;
+    
+    --Bold:#999;
+    --Italic:#999;
+    
+    /*----- TOP FLOATING TITLE -----*/
+    --Large-Floating-Title-Bottom-Gap:32px;
+    --Large-Floating-Title-Size:18px;
+    --Large-Floating-Title-Color:#343846;
+    --Large-Floating-Title-Line-Height:175%;
+    
+    /*----- CHARACTER LIST -----*/
+    --Character-Image-Blur-Amount:2px;
+    --Character-Image-Hover-Speed:400ms;
+    --Character-Image-Spacing:46px;
+    
+    /*----- POPUP SETTINGS -----*/
+    --Popup-Fade-Speed:400ms;
+    --Popup-Fade-Speed-RAW:400;
+    
+    --Overlay-Color:#ffffff;
+    --Overlay-Transparency:45%;
+    
+    --Popup-Width:510px;
+    --Popup-Image-Height:420px;
+    
+    --Popup-Background:#fff;
+    --Popup-Padding:20px;
+    
+    /*----- MAIN POPUP TITLE (TOP LEFT) -----*/
+    --Popup-Title-Size:13px;
+    --Popup-Title-Color:#908a88;
+    --Popup-Title-Padding:10px;
+    --Popup-Title-Underline:#f3f3f3;
+    
+    /*----- POPUP CLOSE BUTTON -----*/
+    --Popup-Close-Width:30px;
+    --Popup-Close-Height:18px;
+    --Popup-Close-Icon-Size:6px;
+    --Popup-Close-Icon-Color:#5f5e5c;
+    --Popup-Close-Background:#f6f5f5;
+    
+    /*----- POPUP IMAGE (LONG, LEFT) -----*/
+    --Popup-Image-Width:215px;
+    --Popup-Image-Right-Gap:15px;
+    
+    /*----- POPUP SUBHEADINGS (e.g. basic info, about) -----*/
+    --Popup-Subheading-Top-Gap:20px;
+    --Popup-Subheading-Size:12px;
+    --Popup-Subheading-Color:#999;
+    --Popup-Subheading-Accent:#b8ab93;
+    --Popup-Subheading-Bottom-Gap:14px;
+    
+    /*----- POPUP ICON ROW STATS (e.g. name, age, birthday) -----*/
+    --Popup-Stats-Icon-Size:13px;
+    --Popup-Stats-Icon-Color:#fff;
+    --Popup-Stats-Icon-Padding:6px;
+    --Popup-Stats-Icon-Background:#d6d1d1;
+    
+    --Popup-Stats-Label-Font-Size:10px;
+    --Popup-Stats-Label-Font-Color:#b8afa4;
+    
+    --Popup-Stats-Text-Size:12px;
+    --Popup-Stats-Text-Color:#999;
+    
+    --Popup-Stats-Row-Spacing:6px;
+    
+    /*----- POPUP METER BAR STATS -----*/
+    --Meter-Bar-Label-Size:10px;
+    --Meter-Bar-Label-Color:#b8afa4;
+    --Meter-Bar-Label-Gap:16px;
+    
+    --Meter-Bar-Height:8px;
+    --Meter-Bar-Fill:#d6d1d1;
+    --Meter-Bar-Empty:#f4f4f4;
+    --Meter-Bar-Roundness:5px;
+    --Meter-Bar-Row-Spacing:5px;
+    
+    /*----- POPUP PARAGRAPH TEXT -----*/
+    --Paragraph-Text-Align:justify;
+    
+    /*----- NAVLINKS / CUSTOM LINKS -----*/
+    --Navlinks-Edge-Offset:9px;
+    --Navlinks-Icon-Size:11px;
+    --Navlinks-Icon-Color:#b4adb8;
+    --Navlinks-Background:#1f182a;
+    --Navlinks-Padding:10px;
+    --Navlinks-Spacing:5px;
+    
+    --Navlinks-HOVER-Background:#dcd4cf;
+    --Navlinks-HOVER-Icon-Color:#424446;
+    --Navlinks-Hover-Speed:420ms;
+    
+    /*----- BOTTOM TITLE -----*/
+    --Bottom-Floor-Title-Size:20px;
+    --Bottom-Floor-Title-Color:#b4adb8;
+    --Bottom-Floor-Title-Padding:30px;
+    --Bottom-Floor-Title-Background:#130f1a;
+    
+    /*----- OTHER -----*/
+    --Scrollbar-Width:0px;
+    --Scrollbar-Color:#f0f0f0;
+    --Scrollbar-Gap:0px;
+    
+    --Tooltips-BG:#dcd4cf;
+    --Tooltips-Text:#424446;
+    
+    --Text-On-Highlight:#777;
+    --Text-BG-On-Highlight:#f6f6f6;
+    
+    --TumblrControls-Color:black;
+}
+
+/*----- LARGE TOP TITLE -----*/
+.large-floating-title {
+    position:absolute;
+    top:0;
+    width:80vw;
+    display:inline-block;
+    font-family:"LT emphasis";
+    font-size:var(--Large-Floating-Title-Size);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--Large-Floating-Title-Color);
+    line-height:var(--Large-Floating-Title-Line-Height);
+    text-align:center;
+    opacity:0;
+    transition:opacity 0.4s ease-in-out;
+}
+
+.large-floating-title div {
+    white-space:pre-line;
+}
+
+/*----- NAVLINKS / CUSTOM LINKS -----*/
+.navlinks {
+    display:inline-block;
+    margin-left:var(--Navlinks-Edge-Offset);
+    margin-bottom:var(--Navlinks-Edge-Offset);
+    line-height:0;
+}
+
+.navlinks a {
+    width:calc(var(--Navlinks-Icon-Size) + (var(--Navlinks-Padding) * 2));
+    height:calc(var(--Navlinks-Icon-Size) + (var(--Navlinks-Padding) * 2));
+    background:var(--Navlinks-Background);
+    border-radius:100%;
+    line-height:0;
+    transition:background var(--Navlinks-Hover-Speed) ease-in-out;
+}
+
+.navlinks a:hover {
+    background:var(--Navlinks-HOVER-Background);
+}
+
+.navlinks a:hover .fi {
+    color:var(--Navlinks-HOVER-Icon-Color);
+}
+
+.navlinks a + a {
+    margin-top:var(--Navlinks-Spacing);
+}
+
+.navlinks .fi {
+    font-size:var(--Navlinks-Icon-Size);
+    color:var(--Navlinks-Icon-Color);
+    transition:color var(--Navlinks-Hover-Speed) ease-in-out;
+}
+
+.navlinks .fi-rr-apps {
+    margin-top:1px;
+}
+
+/*----- BOTTOM TITLE -----*/
+.bottom-floor-title {
+    width:100%;
+    padding:var(--Bottom-Floor-Title-Padding);
+    background:var(--Bottom-Floor-Title-Background);
+    box-sizing:border-box;
+    font-family:"reggae one";
+    font-size:var(--Bottom-Floor-Title-Size);
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    color:var(--Bottom-Floor-Title-Color);
+    text-align:center;
+    line-height:1em;
+    white-space:nowrap;
+}
+
+/*----- CHARACTER LIST -----*/
+.character-list {
+    position:fixed;
+    bottom:0;left:0;right:0;
+    margin:0 auto;
+    margin-bottom:calc(var(--Bottom-Floor-Title-Size) + (var(--Bottom-Floor-Title-Padding) * 2));
+    align-items:flex-end;
+    flex-wrap:nowrap;
+    width:calc(100% - (var(--Navlinks-Edge-Offset) * 2) - (var(--Navlinks-Icon-Size) * 2) - (var(--Navlinks-Padding) * 4));
+    z-index:9;
+}
+
+[menu-character]{
+    margin:0 calc(var(--Character-Image-Spacing) / 2);
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    transition:all var(--Character-Image-Hover-Speed) ease-in-out,margin 0s;
+}
+
+.character-list:hover [menu-character]{
+    opacity:0.8;
+    -webkit-filter:blur(var(--Character-Image-Blur-Amount));
+    -moz-filter:blur(var(--Character-Image-Blur-Amount));
+    -o-filter:blur(var(--Character-Image-Blur-Amount));
+    filter:blur(var(--Character-Image-Blur-Amount));
+}
+
+.character-list:hover [menu-character]:hover {
+    opacity:1;
+    -webkit-filter:blur(0px);
+    -moz-filter:blur(0px);
+    -o-filter:blur(0px);
+    filter:blur(0px);
+}
+
+/*----- POPUP BOXES -----*/
+.popup-box {
+    position:relative;
+    padding:var(--Popup-Padding);
+    background:var(--Popup-Background);
+    width:var(--Popup-Width);
+}
+
+/*----- CLOSE POPUP BUTTON -----*/
+.dis-close {
+    position:absolute;
+    top:0;right:0;
+    width:var(--Popup-Close-Width);
+    height:var(--Popup-Close-Height);
+    background:var(--Popup-Close-Background);
+    cursor:pointer;
+}
+
+.dis-close .fi {
+    font-size:var(--Popup-Close-Icon-Size);
+    color:var(--Popup-Close-Icon-Color);
+    line-height:1em;
+}
+
+[popup-title]{
+    display:block;
+    font-family:kaori gel;
+    font-size:var(--Popup-Title-Size);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--Popup-Title-Color);
+    padding-bottom:var(--Popup-Title-Padding);
+    border-bottom:1px solid var(--Popup-Title-Underline);
+    line-height:1em;
+}
+
+[popup-title] + .maain {
+    margin-top:calc(var(--Popup-Title-Padding) * 1.25);
+}
+
+[popup-img-cont]{
+    align-self:center;
+    width:var(--Popup-Image-Width);
+    height:var(--Popup-Image-Height);
+    overflow:hidden;
+}
+
+[sub-heading]{
+    display:block;
+    font-family:montserrat;
+    font-size:var(--Popup-Subheading-Size);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--Popup-Subheading-Color);
+    line-height:1.5em;
+    text-align:center;
+}
+
+[sub-heading]::first-letter {
+    color:var(--Popup-Subheading-Accent);
+}
+
+* + [sub-heading]{
+    margin-top:var(--Popup-Subheading-Top-Gap);
+}
+
+[sub-heading] + * {
+    margin-top:var(--Popup-Subheading-Bottom-Gap);
+}
+
+/*----- ICON ROW STATS -----*/
+[icon-row] + [icon-row]{
+    margin-top:var(--Popup-Stats-Row-Spacing);
+}
+
+[icon-row] .las + [label] {
+    margin-left:6px;
+}
+
+[icon-row] .las {
+    padding:var(--Popup-Stats-Icon-Padding);
+    background:var(--Popup-Stats-Icon-Background);
+    border-radius:2px;
+    font-size:var(--Popup-Stats-Icon-Size);
+    color:var(--Popup-Stats-Icon-Color);
+    line-height:1em;
+}
+
+[icon-row] [label]{
+    display:inline-block;
+    padding-left:1px;
+    font-family:quicksand;
+    font-size:var(--Popup-Stats-Label-Font-Size);
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    color:var(--Popup-Stats-Label-Font-Color);
+}
+
+[icon-row] [label] + [text] {
+    margin-left:4px;
+}
+
+[icon-row] [text]{
+    font-family:karla;
+    font-size:var(--Popup-Stats-Text-Size);
+    color:var(--Popup-Stats-Text-Color);
+    line-height:1.69em;
+}
+
+/*----- METER BAR STATS -----*/
+.bar-label {
+    display:table-cell;
+    font-family:quicksand;
+    font-size:var(--Meter-Bar-Label-Size);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--Meter-Bar-Label-Color);
+    line-height:1.5em;
+}
+
+.bar-cont {
+    position:relative;
+    width:100%;
+    height:var(--Meter-Bar-Height);
+    background:var(--Meter-Bar-Empty);
+    border-radius:var(--Meter-Bar-Roundness);
+    overflow:hidden;
+}
+
+.bar-fill {
+    position:absolute;
+    top:0;left:0;
+    height:100%;
+    background:var(--Meter-Bar-Fill);
+    border-radius:0 var(--Meter-Bar-Roundness) var(--Meter-Bar-Roundness) 0;
+}
+
+/*----- PARAGRAPH TEXT -----*/
+[paragraph-text]{
+    text-align:var(--Paragraph-Text-Align);
+}
+
+</style>
+ 
+</head>
+ 
+<body>
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+      LARGE TITLE AT THE TOP
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div large-floating-title>
+    Keep walking forward
+    no matter how tattered
+    you become
+</div>
+
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+          CHARACTER LIST
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div class="character-list">
+    
+    <div menu-character chara-id="iida" width="120px">
+        <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918078414945132564/3KYqxMu.png">
+        <span hover-text>iida tenya</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+
+    <div menu-character chara-id="uraraka" width="117px">
+        <img image-url="https://media.discordapp.net/attachments/900692000364445736/918052741367083039/02BmBBN.png">
+        <span hover-text>uraraka ochako</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="midoriya" width="121px">
+        <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918061982136016896/BPKYoEl.png">
+        <span hover-text>midoriya izuku</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="bakugou" width="152px">
+        <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918074514720563250/jFlfdgd.png" move-down="4px" move-left="6px">
+        <span hover-text>bakugou katsuki</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="asui" width="143px">
+        <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918079461667266650/fknlHbI.png" move-left="11px">
+        <span hover-text>asui tsuyu</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="todoroki" width="100px">
+        <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918080474407141406/hRm3tC6.png" move-right="6px">
+        <span hover-text>todoroki shouto</span>
+    </div>
+    
+</div><!--don't remove this </div> line-->
+
+
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+       CHARACTER POPUP BOXES
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div character-box chara-id="iida">
+    <div popup-title>iida tenya</div>
+    
+    <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918346526831562812/yicC8rR.png" width="96%">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>飯田天哉</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>16</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>August 22nd</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="power" fill="80%"></div>
+        <div bar-name="speed" fill="100%"></div>
+        <div bar-name="technique" fill="60%"></div>
+        <div bar-name="intelligence" fill="80%"></div>
+        <div bar-name="copperativeness" fill="60%"></div>
+    </div>
+    
+    <div sub-heading>about</div>
+    
+    <div paragraph-text>
+        Engine-like cylinders protude from his calves! His legs are speedy and quick! The fuel his leg-engines need is none other than 100% orange juice! (Carbonic acid stalls his engine!) Furthermore, he can adapt to the situation at hand by switching between first, second, and third gears!
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="uraraka">
+    <div popup-title>uraraka ochako</div>
+    
+    <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918321922956218378/s3GFdCj.png" width="90%" move-down="10px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>麗日お茶子</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>16</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>December 27th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="power" fill="40%"></div>
+        <div bar-name="speed" fill="20%"></div>
+        <div bar-name="technique" fill="100%"></div>
+        <div bar-name="intelligence" fill="60%"></div>
+        <div bar-name="copperativeness" fill="100%"></div>
+    </div>
+    
+    <div sub-heading>about</div>
+    
+    <div paragraph-text>
+        She has five little pads at the tips of the fingers of each hand! If she touches anything with all five pads, she can remove its gravitational pull! And anything that's had its gravitational pull relative to the planet removed will simply float in midair, effectively weightless!
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="midoriya">
+    <div popup-title>midoriya izuku</div>
+    
+    <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/918348569730228254/ZJpQ228.png" width="96%" move-left="5px" move-down="5px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>緑谷出久</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>July 15th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="power" fill="20%"></div>
+        <div bar-name="speed" fill="20%"></div>
+        <div bar-name="technique" fill="80%"></div>
+        <div bar-name="intelligence" fill="80%"></div>
+        <div bar-name="copperativeness" fill="100%"></div>
+    </div>
+    
+    <div sub-heading>about</div>
+    
+    <div paragraph-text>
+        The accumulated and stockpiled strength of countless men, crystallized in its current user! In the twinkling of an eye, Midoriya can summon an absolutely stupid amount of power! However, the toll it takes on his body when he unleashes his strength at the full 100% is enough to break his bones, so his next challenge is learning to modulate it.
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="bakugou">
+    <div popup-title>bakugou katsuki</div>
+    
+    <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/919138551197732874/m3mW1CP.png" width="96%" move-down="5px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>爆豪勝己</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>April 20th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="power" fill="100%"></div>
+        <div bar-name="speed" fill="80%"></div>
+        <div bar-name="technique" fill="100%"></div>
+        <div bar-name="intelligence" fill="80%"></div>
+        <div bar-name="copperativeness" fill="20%"></div>
+    </div>
+    
+    <div sub-heading>about</div>
+    
+    <div paragraph-text>
+        The sweat glands on Bakugou's palms are mutant! With sweat akin to nitroglycerin, he's able to cause explosions at will. He can spark off explosions unaided as well, but his ability is undoubtedly boosted by activities that conduce sweating - so he's a force to be reckoned with in summertime! However, he's a slow starter in winter! At any rate, the more sweat, the greater the power of his quirk. He has no big drawbacks and his strength leaves no heads unturned! He's a rare specimen - a delinquent with a promising future!
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="asui">
+    <div popup-title>asui tsuyu</div>
+    
+    <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/919140980177899562/p8U97Bs.png" width="88%" move-left="10px" move-down="5px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>蛙吹梅雨</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>February 12th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="power" fill="20%"></div>
+        <div bar-name="speed" fill="60%"></div>
+        <div bar-name="technique" fill="80%"></div>
+        <div bar-name="intelligence" fill="80%"></div>
+        <div bar-name="copperativeness" fill="100%"></div>
+    </div>
+    
+    <div sub-heading>about</div>
+    
+    <div paragraph-text>
+        She can do almost all things frog-like! She can extend her tongue, and she has incredible jumping ability!! Most recently, she has been mastering a camouflaging ability. You can't deny that she's almost becoming too powerful! However, she does have weaknesses as well! In cold environments for too long, she becomes incapable of using her quirk! On top of that, all she is able to say is "I'm sleepy!"
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="todoroki">
+    <div popup-title>todoroki shouto</div>
+    
+    <img image-url="https://cdn.discordapp.com/attachments/900692000364445736/919142251920232468/4LjiySq.png" width="97%" move-left="10px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>轟焦凍</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>January 11th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="power" fill="100%"></div>
+        <div bar-name="speed" fill="80%"></div>
+        <div bar-name="technique" fill="100%"></div>
+        <div bar-name="intelligence" fill="80%"></div>
+        <div bar-name="copperativeness" fill="60%"></div>
+    </div>
+    
+    <div sub-heading>about</div>
+    
+    <div paragraph-text>
+        He can make anything that touches his right side freeze over his left side. Meanwhile, he can blast out scorching hot flames!
+However, if he keeps activating his freeze power over a long enough stretch, he'll suffer frostbite himself, so he needs to use the heat of his left side to keep his body temperature stable!
+<p>
+On the flip side, if he kept using his left side's flames for too long...I wonder what would happen?
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+      NAVLINKS / CUSTOM LINKS
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div class="booba">
+    <div class="navlinks">
+    
+        <!--
+            • add or remove any links as you need
+            
+            HOW TO CHANGE THE ICON FOR THAT LINK:
+            • go to  flaticon.com/uicons
+            • DO NOT change the "regular" and "rounded" presets
+            • search for an icon you like, click on it
+            • click the copy icon on the code snippet above the green boxes
+            • below, replace the fi-rr line with what you copied
+        -->
+    
+        <a href="https://xat.me/lariatoooo" title="Angel">
+            <i class="fi fi-rr-heart"></i>
+        </a>
+        
+        <a href="https://xat.me/Chaii" title="Chaii">
+            <i class="fi fi-rr-heart"></i>
+        </a>
+        
+        <a href="https://xat.me/xRaidSendo" title="Raid">
+            <i class="fi fi-rr-heart"></i>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=CN_DjYDHEVU" title="Get your game on!">
+            <i class="fi fi-rr-heart"></i>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=yL75mtNZ6PA" title="One two three four go!">
+            <i class="fi fi-rr-heart"></i>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=19qpqjebafg" title="Let it rip!">
+            <i class="fi fi-rr-heart"></i>
+        </a>
+        
+    </div><!--don't remove this </div> line-->
+    <!--end navlinks-->
+    
+    <!---- CREDIT ---->
+    <!-- please do not remove (⊃д⊂) -->
+    <a class="cows-ring-endlessly-in-tandem" href="//glenthemes.tumblr.com" title="&#10094;&#10094; Fortitude &#10095;&#10095;&#8194;by glenthemes">credit</a>
+    
+    <!--==============================
+             ╔══ ❀•°❀°•❀ ══╗
+             
+               BOTTOM TITLE
+          
+             ╚══ ❀•°❀°•❀ ══╝
+    ================================-->
+    
+    <div class="bottom-floor-title">
+        歩み続けろ。ボロボロになっても。
+    </div><!--don't remove this </div> line-->
+    
+    
+</div><!--booba-->
+
+</body>
+
+</html>
